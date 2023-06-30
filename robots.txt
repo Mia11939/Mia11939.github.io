@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://Mia11939.github.io/al-folio/sitemap.xml
+Sitemap: https://Mia11939.github.io/yayue//sitemap.xml
