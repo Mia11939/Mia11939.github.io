@@ -55,7 +55,7 @@ navbar_fixed: true
 footer_fixed: true
 
 # Dimensions
-max_width: 800px
+max_width: 1000px #800px
 
 # TODO: add layout settings (single page vs. multi-page)
 
@@ -106,7 +106,8 @@ youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
 discord_id: # your discord id (18-digit unique numerical identifier)
 
 contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+  The best way to reach me is through email, as I check it regularly throughout the day. 
+#However, I'm also available on Wechat and Twitter, where I keep up-to-date with the latest trends in AI and machine learning.
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -122,9 +123,23 @@ bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: al-folio # blog_name will be displayed in your blog page
-blog_nav_title: blog # your blog must have a title for it to be displayed in the nav bar
-blog_description: a simple whitespace theme for academics
+# blog_name: al-folio # blog_name will be displayed in your blog page
+# blog_nav_title: blog # your blog must have a title for it to be displayed in the nav bar
+# blog_description: a simple whitespace theme for academics
+# permalink: /blog/:year/:title/
+
+# # Pagination
+# pagination:
+#   enabled: true
+
+# related_blog_posts:
+#   enabled: true
+#   max_related: 5
+
+
+blog_name: Research Experience # blog_name will be displayed in your blog page
+blog_nav_title: Research Experience # your blog must have a title for it to be displayed in the nav bar
+blog_description: Introduction for Research Experience, Updated on July 1, 2023.
 permalink: /blog/:year/:title/
 
 # Pagination
@@ -271,8 +286,8 @@ display_categories: ['blockquotes'] # these categories will be displayed on the 
 
 scholar:
 
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Yayue]
+  first_name: [Deng]
 
   style: apa
   locale: en
