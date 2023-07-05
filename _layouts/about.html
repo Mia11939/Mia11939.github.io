@@ -33,33 +33,9 @@ layout: default
               {{ page.profile.address }}
             </div>
             {%- endif %}
-          </div>
-          {%- endif %}
 
-          <div class="clearfix">
-            {{ content }}
-          </div>
-
-          <!-- News -->
-          {% if page.news and site.announcements.enabled -%}
-            <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">news</a></h2>
-            {%- include news.html limit=true %}
-          {%- endif %}
-
-          <!-- Latest posts -->
-          {% if page.latest_posts -%}
-            <h2><a href="{{ '/blog/' | relative_url }}" style="color: inherit;">latest posts</a></h2>
-            {%- include latest_posts.html %}
-          {%- endif %}
-
-          <!-- Selected papers -->
-          {% if page.selected_papers -%}
-            <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">selected publications</a></h2>
-            {%- include selected_papers.html %}
-          {%- endif %}
-
-          <!-- Social -->
-          {%- if page.social %}
+            <!-- Social -->
+            {%- if page.social %}
             <div class="social">
               <div class="contact-icons">
                 {% include social.html %}
@@ -70,7 +46,74 @@ layout: default
               </div>
 
             </div>
+
           {%- endif %}
+
+          </div>
+          {%- endif %}
+
+          <div class="clearfix">
+            {{ content }}
+          </div>
+          <p></p>
+          <br/>
+          <!-- News -->
+          {% if page.news and site.announcements.enabled -%}
+            <h2>news</h2>
+            <!-- <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">news</a></h2> -->
+            {%- include news.html limit=true %}
+          {%- endif %}
+
+          <!-- Latest posts
+          {% if page.latest_posts -%}
+            <h2><a href="{{ '/blog/' | relative_url }}" style="color: inherit;">latest posts</a></h2>
+            {%- include latest_posts.html %}
+          {%- endif %} -->
+          
+          <p></p>
+          <br/>
+
+          <!-- Selected papers -->
+          {% if page.selected_papers -%}
+            <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">selected publications</a></h2>
+            {%- include selected_papers.html %}
+          {%- endif %}
+
+          <p></p>
+          <br/>
+
+          <!-- 增加的education时间线 -->
+          {% if page.selected_papers -%}
+            <h2>Experience</h2>
+            <!-- <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">Education</a></h2> -->
+
+
+          <div class="container row">
+            <!-- <h1 class="cv-title"><span class="black white-text"></span></h1> -->
+            {% assign steps = site.steps | sort: 'date' %}
+            {% for step in steps %}
+            <div class="item">
+                <i class="vertical-line"></i>
+                <h2 class="item-date">{{ step.date | date: '%m/%Y' }}{% if step.enddate %} - {{ step.enddate | date: '%m/%Y' }}{% endif %}</h2>
+                <div class="card-panel">
+                    <h3 class="card-title">
+                        {{ step.title }}
+                    </h3>
+                    <p>
+                        {{ step.content }}
+                    </p>
+                </div>
+            </div>
+            {% endfor %}
+            <!-- <div class="last-item">
+                <i class="vertical-line"></i>
+            </div> -->
+            
+            </div>
+            <!-- {%- endif %} -->
+
+
+
         </article>
 
 </div>

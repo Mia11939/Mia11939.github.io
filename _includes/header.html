@@ -1,6 +1,5 @@
 
     <header>
-
       <!-- Nav Bar -->
       <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}">
         <div class="container">
@@ -61,6 +60,15 @@
                 </a>
               </li>
               {%- endif %}
+
+              <!-- <meta name="description" content="{{ site.description }}">
+              <meta name="robots" content="index,follow">
+              <meta itemprop="name" content="{{ site.title }}">
+              <meta name="theme-color" content="{{ site.color }}"> -->
+          
+              <!-- <link href="/assets/css/materialize.min.css" rel="stylesheet"> -->
+              <link href="/assets/css/main_add.css" rel="stylesheet">
+              <link href="https://fonts.googleapis.com/css?family=Lato|Oswald" rel="stylesheet">
 
               <!-- Other pages -->
               {%- assign sorted_pages = site.pages | sort: "nav_order" -%}

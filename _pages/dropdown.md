@@ -1,13 +1,12 @@
 ---
 layout: page
-title: submenus
+title: cv
 nav: true
 nav_order: 6
 dropdown: true
 children: 
-    - title: publications
-      permalink: /publications/
-    - title: divider
-    - title: projects
-      permalink: /projects/
+    - title: cv_download
+      permalink: /assets/pdf/cv_zh.pdf
+    # - title: projects
+    #   permalink: /projects/
 ---
