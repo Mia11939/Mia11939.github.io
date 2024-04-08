@@ -28,12 +28,6 @@ Hello! My name is Yayue Deng. I am a dedicated Artificial Intelligence Master's 
 
 My academic focus is on Artificial Intelligence and Machine Learning, with a particular interest in **Speech Synthesis and Natural Language Processing**. My ultimate goal is to leverage my expertise in these areas to develop a conversational chatbot that exhibits both emotional and intellectual intelligence. I am currently researching Speech Synthesis (TTS) and Spoken Dialogue Systems as part of my Master's degree, which aligns with my future aspirations.
 
-In addition to this primary line of research, I am also interested in:
-
-&nbsp; - Refinement of models in the field of financial economics, and the application of domain-specific language models. 
-
-&nbsp; - Macroeconomics, Machine Learning, and Finance
-
 You can also read more about my research experience and my background by [clicking](blog/) or [google scholar](https://scholar.google.com/citations?user=N_iA1hoAAAAJ&hl=zh-CN).
 
 **My future plan is to pursue a doctoral degree. If you are interested in my field of research, please feel free to contact me at yayue.deng@bupt.edu.cn or Twitter!**
